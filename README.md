@@ -28,8 +28,8 @@ create `.eastrc` file at current directory
 
 ```js
 {
-	"adapter": "east-elasticsearch",
-	"url": "",
+  "adapter": "east-elasticsearch",
+  "url": "",
   "elasticSearchApiVersion": undefined,
   "migrationsIndex": ".migrations"
 }
@@ -70,7 +70,7 @@ exports.migrate = function(client, done) {
 };
 
 exports.rollback = function(client, done) {
-  client.indices.create({ index: 'apples' }).then(() => {
+  client.indices.delete({ index: 'apples' }).then(() => {
     done();
   }).catch(done);
 };
