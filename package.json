@@ -1,0 +1,24 @@
+{
+	"name": "east-elasticsearch",
+	"description": "Elasticsearch adapter for \"east\" (node.js database migration tool)",
+	"version": "1.0.0",
+	"author": "snmgian@gmail.com",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/snmgiant/east-elasticsearch.git"
+	},
+	"main": "./lib/adapter",
+	"keywords": [
+		"database",
+		"db",
+		"migrate",
+		"elasticsearch"
+	],
+	"dependencies": {
+		"elasticsearch": "~12"
+	},
+	"devDependencies": {
+		"eslint": "^3.11.1"
+	}
+}
